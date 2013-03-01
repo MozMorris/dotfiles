@@ -1,2 +1,6 @@
 [
+  { "keys": ["f1"], "command": "goto_documentation" },
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["ctrl+shift+h"], "command": "reindent", "args" : {"single_line": false} }
 ]

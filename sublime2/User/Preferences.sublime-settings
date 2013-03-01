@@ -1,4 +1,31 @@
 {
-	"font_size": 12.0,
-	"theme": "Soda Dark.sublime-theme"
+  "auto_indent": true,
+  "color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+  "detect_slow_plugins": false,
+  "dictionary": "Packages/Language - English/en_GB.dic",
+  "matchBracketsAngle": true,
+  "matchBracketsBraces": true,
+  "matchBracketsSquare": true,
+  "ensure_newline_at_eof_on_save": true,
+  "file_exclude_patterns":
+  [
+    "*.sql"
+  ],
+  "folder_exclude_patterns":
+  [
+    ".bundle",
+    "cache",
+    ".git",
+    ".sass-cache",
+    ".svn"
+  ],
+  "font_size": 12.0,
+  "highlight_modified_tabs": true,
+  "ignored_packages": [ "Vintage" ],
+  "ruler": [ 80 ],
+  "spell_check": true,
+  "tab_size": 2,
+  "theme": "Soda Dark.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }
