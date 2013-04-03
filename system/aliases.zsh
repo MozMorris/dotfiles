@@ -11,3 +11,6 @@ fi
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
