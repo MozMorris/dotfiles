@@ -1,0 +1,33 @@
+# Sweet colours & encoding for status line
+set -g default-terminal "screen-256color"
+setw -g utf8 on
+set -g status-utf8 on
+
+# Status bar
+set -g status-left-length 60
+set -g status-right-length 60
+set -g status-left ' #{session_name} ⡇'
+set -g status-right '⡇ #(whoami) @ #H ◷ #[default]%H:%M '
+set -g status-interval 10
+
+# Copy/Paste fix
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# Quickly reload tmux conf
+unbind r
+bind r source-file ~/.tmux.conf
+
+# Screen, I still love you
+unbind C-b
+set -g prefix C-a
+unbind %
+bind | split-window -h
+
+# Mapping tmux to C-a breaks jump to start of line. Fix it.
+bind a send-prefix
+
+# Scrolling http://superuser.com/questions/209437/how-do-i-scroll-in-tmux/326592#326592
+set -g terminal-overrides 'xterm*:smcup@:rmcup@'
+
+# Tomorrow Night (https://github.com/chriskempson/tomorrow-theme) theme
+source $HOME/.dotfiles/tmux/tomorrow-night.tmux
