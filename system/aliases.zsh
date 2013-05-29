@@ -14,3 +14,5 @@ alias sudo='sudo '
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
+
+alias t="todo.sh"
