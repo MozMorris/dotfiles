@@ -1,5 +1,5 @@
 # Sweet colours & encoding
-set -g default-terminal "screen-256color"
+set -g default-terminal "xterm-256color"
 setw -g utf8 on
 
 # Status bar
