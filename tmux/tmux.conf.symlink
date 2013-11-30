@@ -8,6 +8,10 @@ set -g status-right-length 60
 set -g status-left ' #{session_name} ⡇'
 set -g status-right '⡇ #(whoami) @ #H ◷ #[default]%H:%M '
 set -g status-interval 10
+set -g status-utf8 on
+
+# start window numbering at 1 for easier switching
+set -g base-index 1
 
 # Copy/Paste fix
 set-option -g default-command "reattach-to-user-namespace -l zsh"
